@@ -3,10 +3,10 @@ import dotenv from "dotenv";
 import cors from "cors";
 import compression from "compression";
 
-import httpLogger from "./middleware/morgan";
-import logger from "./common/logger";
-import connectDB from "./config/db";
-import routes from "./routes";
+import httpLogger from "./middleware/morgan/index.js";
+import logger from "./common/logger/index.js";
+import connectDB from "./config/db.js";
+import routes from "./routes/index.js";
 
 const app = express();
 

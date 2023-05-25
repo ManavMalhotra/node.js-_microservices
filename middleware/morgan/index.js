@@ -1,5 +1,5 @@
 import morgan from 'morgan'
-import logger from '../../common/logger'
+import logger from '../../common/logger/index.js'
 
 logger.stream = {
   write: message => logger.info(message.substring(0, message.lastIndexOf('\n')))
